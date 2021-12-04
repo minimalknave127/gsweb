@@ -1,0 +1,156 @@
+.banner {
+  min-height: calc(100vh + 180px);
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 200px);
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.banner::before {
+  content: url("../assets/wave.svg");
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner .title {
+  font-size: 80px !important;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.banner .subtitle {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.banner .phones {
+  position: relative;
+}
+
+.banner .phones .blob {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects .pc .project-img {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .pc .project-img img {
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.projects .pc .project-text {
+  height: 100%;
+  overflow: hidden;
+}
+
+.projects .pc .project-text span {
+  font-size: 18px;
+}
+
+.projects .pc .project-text > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team .team-info span {
+  font-size: 18px;
+}
+
+.team .slider-arrow {
+  cursor: pointer;
+}
+
+section.glob {
+  background-color: black;
+}
+
+section.glob * {
+  color: white;
+}
+
+section.glob .title {
+  max-width: 13ch;
+}
+
+section.glob p {
+  max-width: 400px;
+}
+
+section.glob .glob-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 32px;
+  background-color: #0041ac;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  line-height: 32px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 65, 172, 0.5);
+          box-shadow: 0px 0px 30px rgba(0, 65, 172, 0.5);
+}
+
+section.glob .glob-tag:first-of-type {
+  top: 100px;
+  left: 0;
+}
+
+section.glob .glob-tag:nth-of-type(2) {
+  top: 380px;
+  left: 76%;
+}
+
+section.glob .glob-tag:nth-of-type(3) {
+  top: 100px;
+  left: 70%;
+  z-index: 2;
+}
+
+section.glob .glob-tag:nth-of-type(4) {
+  top: 350px;
+  left: -20px;
+  z-index: 2;
+}
+/*# sourceMappingURL=home.css.map */
